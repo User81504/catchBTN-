@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+  background-color: #272929;
+  margin: 0;
+  padding: 0;
+  cursor: crosshair;
+  font-family: 'VT323', monospace;
+  user-select: none;
+}
+.field {
+  padding: 100px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: calc(100vh - 346px);
+}
+
+h1 {
+  margin: 0 auto;
+  padding-top: 40px;
+  color: #c4bebb;
+  max-width: 1200px;
+  text-align: center;
+  letter-spacing: 6px;
+  font-size: 36px;
+}
+h1 span {
+  color: #84d07d;
+}
+
+#btn {
+  padding: 0;
+  position: relative;
+  z-index: 3;
+  width: 110px;
+  height: 50px;
+  background-color: #84d07d;
+  border: none;
+  color: #272929;
+  border-radius: 1px;
+  outline: none;
+  cursor: inherit;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+  letter-spacing: 4px;
+  transition: 0.6s;
+  transition-delay: 0.05s;
+}
+#btn::before {
+  content: '';
+  position: absolute;
+  display: block;
+  z-index: 1;
+  opacity: 0.1;
+  width: 110px;
+  height: 50px;
+  border-radius: 1px;
+  top: 4px;
+  left: 4px;
+  background-color: #84d07d;
+}
+
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info__design {
+}
+/* .info__img {
+  width: 60px;
+  height: 60px;
+} */
+.info__actions {
+  padding-right: 14px;
+  opacity: 0.7;
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.info__actions-text {
+  opacity: 0.7;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #c4bebb;
+}
+
+
+.btn-mode {
+
+  padding: 0;
+  border: none;
+  border-radius: 1px;
+  outline: none;
+  cursor: inherit;
+  text-transform: uppercase;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+
+
+
+  width: 40px;
+  height: 40px;
+  color: #c4bebb;
+  transition: 0s;
+}
+.btn-mode::before {
+  content: none;
+}
+.btn-mode:hover {
+  scale: 0.97;
+}
+.btn-mode-1 {
+  background-color: #494786;
+}
+.btn-mode-2 {
+  background-color: #9a2257;
+}
+
+
+a {
+  display: block;
+  margin-top: 30px;
+}
